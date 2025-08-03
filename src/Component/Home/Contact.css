@@ -1,0 +1,176 @@
+/* Contact form container */
+
+
+.contact-left, .contact-right {
+ 
+}
+
+.contact .icons{
+  font-weight: 900;
+  color: #001976;
+}
+.contact .text span{
+  font-size: 21px;
+  line-height: 40px;
+  color: #727272;font-weight: 400;
+}
+
+.contact .text p{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 37px;
+  color:#001976;
+  margin: 2px 0;
+  direction: ltr;
+
+}
+.contact .form-text-part{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.contact .form-text-part i{
+  font-size: 30px;
+  margin-left: 20px;
+}
+.contact-left p {
+  font-size: 21px;
+  color: #727272;
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 40px;
+  margin:20px 0;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px;
+}
+.contact-right{
+  border: 1px solid #ECECEC;
+  border-radius: 15px;
+  
+}
+.contact-right label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.contact-right input, .contact-right textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #E3DBD8;
+  border-radius: 12px;
+}
+.contact-right input:focus, .contact-right textarea:focus {
+  border-color: #00509e;
+  outline: none;
+}
+/* Style for input container with icons */
+.input-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #001976;
+  font-size: 18px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 10px 20px 10px 40px; 
+  font-size: 16px;
+  border: 1px solid #E3DBD8;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.contact-right textarea {
+  height: 150px;
+  resize: none;
+}
+
+
+.contact-right button {
+  background-color: #001976;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius:10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-right button:hover {
+  background-color: #00509e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+
+  .contact-left h1 {
+    font-size: 28px;
+  }
+
+  .contact-left p {
+    font-size: 14px;
+  }
+
+  .contact-right label {
+    font-size: 14px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 14px;
+  }
+
+  .contact-right button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    gap: 10px;
+  }
+
+  .contact-left h1 {
+    font-size: 24px;
+  }
+
+  .contact-left p {
+    font-size: 12px;
+  }
+
+  .contact-right label {
+    font-size: 12px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 12px;
+  }
+
+  .contact-right button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

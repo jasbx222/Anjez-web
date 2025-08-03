@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+
+  height: 60px;
+  font-family: 'Almarai', sans-serif !important;
+  direction: rtl;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none !important;
+  color: #001976;
+}
+section{
+  margin: 100px 0;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  section{
+    margin: 40px 0;
+  }
+}
+
