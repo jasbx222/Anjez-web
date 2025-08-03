@@ -23,7 +23,7 @@ const Accordion = () => {
   useEffect(() => {
     const fetchFAQs = async () => {
       try {
-        const response = await fetch(`${proccess.env.REACT_APP_BACKEND_URL}faq`);
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}faq`);
         const data = await response.json();
         // Limit to 5 items as requested
         const limitedFaqs = data.data.slice(0, 5);

@@ -19,7 +19,7 @@ const ClientsSection = () => {
   useEffect(() => {
     const fetchClients = async () => {
       try {
-        const response = await fetch(`${proccess.env.REACT_APP_BACKEND_URL}client`);
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}client`);
         const data = await response.json();
         setClients(data.data);
         setLoading(false);

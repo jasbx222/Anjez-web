@@ -14,7 +14,7 @@ const Pricing = () => {
   useEffect(() => {
     const fetchPlans = async () => {
       try {
-        const response = await fetch(`${proccess.env.REACT_APP_BACKEND_URL}plan`);
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}plan`);
         const data = await response.json();
         setPlans(data.data);
         setLoading(false);
